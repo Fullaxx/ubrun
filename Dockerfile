@@ -12,6 +12,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get install -y \
       libcurl4 \
+      libgcrypt20 \
       libmicrohttpd12 \
       libpcap0.8 \
       sqlite3 \
