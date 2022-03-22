@@ -17,6 +17,7 @@ RUN apt-get update && \
       libpcap0.8 \
       sqlite3 \
       libssl1.1 \
+      libwebsockets15 \
       libxml2 \
       libzmq5 \
       xxhash && \
