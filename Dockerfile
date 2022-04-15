@@ -12,6 +12,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get install -y \
       libcurl4 \
+      libevent-2.1-7 \
       libgcrypt20 \
       libhiredis0.14 \
       libmicrohttpd12 \
