@@ -13,6 +13,7 @@ RUN apt-get update && \
     apt-get install -y \
       libcurl4 \
       libgcrypt20 \
+      libhiredis0.14 \
       libmicrohttpd12 \
       libpcap0.8 \
       sqlite3 \
