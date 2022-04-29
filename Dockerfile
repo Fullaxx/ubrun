@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # ------------------------------------------------------------------------------
 # Create a docker image suitable for runtime
 RUN apt-get update && \
-    apt-get install -y \
+    apt-get install -y --no-install-recommends \
       libcurl4 \
       libevent-2.1-7 \
       libgcrypt20 \
