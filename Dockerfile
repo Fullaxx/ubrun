@@ -22,7 +22,9 @@ RUN apt-get update && \
       libwebsockets15 \
       libxml2 \
       libzmq5 \
-      xxhash && \
+      unzip \
+      xxhash \
+      zip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
