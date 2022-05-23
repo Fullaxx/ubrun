@@ -16,6 +16,7 @@ RUN apt-get update && \
       libgcrypt20 \
       libhiredis0.14 \
       libmicrohttpd12 \
+      libnet1 \
       libpcap0.8 \
       sqlite3 \
       libssl1.1 \
