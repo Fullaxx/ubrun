@@ -19,6 +19,7 @@ RUN apt-get update && \
       libnet1 \
       libpcap0.8 \
       sqlite3 \
+      supervisor \
       libssl1.1 \
       libwebsockets15 \
       libxml2 \
