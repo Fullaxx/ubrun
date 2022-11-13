@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 # Pull base image
-FROM ubuntu:focal
+FROM ubuntu:jammy
 MAINTAINER Brett Kuskie <fullaxx@gmail.com>
 
 # ------------------------------------------------------------------------------
@@ -20,8 +20,8 @@ RUN apt-get update && \
       libpcap0.8 \
       sqlite3 \
       supervisor \
-      libssl1.1 \
-      libwebsockets15 \
+      libssl3 \
+      libwebsockets16 \
       libxml2 \
       libzmq5 \
       unzip \
