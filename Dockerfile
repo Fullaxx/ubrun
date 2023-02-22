@@ -18,12 +18,13 @@ RUN apt-get update && \
       libmicrohttpd12 \
       libnet1 \
       libpcap0.8 \
-      sqlite3 \
-      supervisor \
       libssl3 \
       libwebsockets16 \
       libxml2 \
       libzmq5 \
+      nano \
+      sqlite3 \
+      supervisor \
       unzip \
       xxhash \
       zip && \
