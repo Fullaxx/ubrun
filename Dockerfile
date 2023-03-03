@@ -22,7 +22,13 @@ RUN apt-get update && \
       libwebsockets16 \
       libxml2 \
       libzmq5 \
+      lbzip2 \
+      lrzip \
       nano \
+      pbzip2 \
+      pigz \
+      pixz \
+      plzip \
       sqlite3 \
       supervisor \
       unzip \
