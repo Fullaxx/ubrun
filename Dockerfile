@@ -11,7 +11,10 @@ ENV DEBIAN_FRONTEND noninteractive
 # Create a docker image suitable for runtime
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+      iproute2 \
+      iputils-ping \
       jq \
+      less \
       libcurl4 \
       libevent-2.1-7 \
       libgcrypt20 \
@@ -25,7 +28,9 @@ RUN apt-get update && \
       libzmq5 \
       lbzip2 \
       lrzip \
+      lsof \
       nano \
+      net-tools \
       pbzip2 \
       pigz \
       pixz \
@@ -36,6 +41,7 @@ RUN apt-get update && \
       sqlite3 \
       supervisor \
       unzip \
+      vim-tiny \
       xxhash \
       zip && \
     apt-get clean && \
