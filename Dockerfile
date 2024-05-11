@@ -45,6 +45,7 @@ RUN apt-get update && \
       supervisor \
       tcpdump \
       tmux \
+      tshark \
       unzip \
       vim-tiny \
       xxhash \
