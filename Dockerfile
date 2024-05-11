@@ -38,10 +38,12 @@ RUN apt-get update && \
       plzip \
       pv \
       run-one \
+      screen \
       silversearcher-ag \
       sqlite3 \
       supervisor \
       tcpdump \
+      tmux \
       unzip \
       vim-tiny \
       xxhash \
