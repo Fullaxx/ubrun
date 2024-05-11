@@ -43,7 +43,8 @@ RUN apt-get update && \
       unzip \
       vim-tiny \
       xxhash \
-      zip && \
+      zip \
+      zlib1g && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
