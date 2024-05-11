@@ -11,6 +11,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Create a docker image suitable for runtime
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+      dtach \
       hping3 \
       iproute2 \
       iputils-ping \
