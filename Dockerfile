@@ -8,6 +8,10 @@ LABEL author="Brett Kuskie <fullaxx@gmail.com>"
 ENV DEBIAN_FRONTEND=noninteractive
 
 # ------------------------------------------------------------------------------
+# Prepare Python requirements.txt
+COPY requirements.txt /install/requirements.txt
+
+# ------------------------------------------------------------------------------
 # Create a docker image suitable for runtime
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -38,6 +42,7 @@ RUN apt-get update && \
       pixz \
       plzip \
       pv \
+      python3-pip \
       run-one \
       screen \
       silversearcher-ag \
@@ -51,16 +56,10 @@ RUN apt-get update && \
       xxhash \
       zip \
       zlib1g && \
+    pip3 install -r /install/requirements.txt && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
 # ------------------------------------------------------------------------------
-# Install python modules and clean up
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends python3-pip && \
-    python3 -m pip install redis[hiredis] pandas==2.1.4 pyzmq xxhash && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
-
-# ------------------------------------------------------------------------------
-# Define default entrypoint
+# Define default command
 CMD ["/bin/bash"]
