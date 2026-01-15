@@ -22,15 +22,15 @@ RUN apt-get update && \
       iputils-ping \
       jq \
       less \
-      libcurl4 \
-      libevent-2.1-7 \
+      libcurl4t64 \
+      libevent-2.1-7t64 \
       libgcrypt20 \
-      libhiredis0.14 \
-      libmicrohttpd12 \
+      libhiredis1.1.0 \
+      libmicrohttpd12t64 \
       libnet1 \
-      libpcap0.8 \
-      libssl3 \
-      libwebsockets16 \
+      libpcap0.8t64 \
+      libssl3t64 \
+      libwebsockets19t64 \
       libxml2 \
       libzmq5 \
       lbzip2 \
@@ -39,6 +39,7 @@ RUN apt-get update && \
       nano \
       net-tools \
       pbzip2 \
+      pcaputils \
       pigz \
       pixz \
       plzip \
