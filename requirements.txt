@@ -28,6 +28,8 @@ TA-Lib
 
 plotly
 
+polars
+
 pygments
 
 # pyqtgraph
