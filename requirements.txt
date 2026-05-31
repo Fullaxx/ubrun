@@ -30,6 +30,8 @@ plotly
 
 polars
 
+pybase64
+
 pygments
 
 # pyqtgraph
