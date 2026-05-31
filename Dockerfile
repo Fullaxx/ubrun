@@ -57,7 +57,8 @@ RUN apt-get update && \
       vim-tiny \
       xxhash \
       zip \
-      zlib1g && \
+      zlib1g \
+      zstd && \
     rm /usr/lib/python3*/EXTERNALLY-MANAGED && \
     pip3 install -r /install/requirements.txt && \
     apt-get clean && \
